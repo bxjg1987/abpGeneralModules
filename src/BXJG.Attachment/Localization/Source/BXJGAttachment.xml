@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<localizationDictionary culture="en">
+  <texts>
+    <text name="数据字典" value="General dictionary" />
+    <text name="此节点不允许修改！" value="This node is not allowed to be modified!" />
+    <text name="是" value="Yes" />
+    <text name="否" value="No" />
+    <text name="全部" value="All" />
+    <text name="不限" value="Unlimited" />
+    <text name="请选择" value="Please choose" />
+  </texts>
+</localizationDictionary>

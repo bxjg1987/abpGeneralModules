@@ -109,14 +109,14 @@ namespace BXJG.File
     /// <summary>
     /// 本地文件管理领域逻辑类
     /// </summary>
-    public class BXJGLocalFileManagerBase<TEntity> : DomainService//, IFileManager //现在对网盘接口还不熟悉，以后再考虑封装吧
-   where TEntity:BXJGFileEntty,new()
+    public class BXJGLocalFileManager<TEntity> : DomainService//, IFileManager //现在对网盘接口还不熟悉，以后再考虑封装吧
+   where TEntity: BXJGFileEntty, new()
     {
         private readonly IRepository<TEntity, long> repository;
         public IAsyncQueryableExecuter AsyncQueryableExecuter { get; set; }//属性注入 要public
         private readonly IFeatureChecker featureChecker;
 
-        public BXJGLocalFileManagerBase(IRepository<TEntity, long> repository, IFeatureChecker featureChecker)
+        public BXJGLocalFileManager(IRepository<TEntity, long> repository, IFeatureChecker featureChecker)
         {
             base.LocalizationSourceName = BXJGFileConsts.LocalizationSourceName;
             this.repository = repository;
@@ -477,7 +477,7 @@ namespace BXJG.File
         //}
     }
 
-    public class BXJGLocalFileManager : BXJGLocalFileManagerBase<BXJGFileEntty>
+    public class BXJGLocalFileManager : BXJGLocalFileManager<BXJGFileEntty>
     {
         public BXJGLocalFileManager(IRepository<BXJGFileEntty, long> repository, IFeatureChecker featureChecker) : base(repository, featureChecker)
         {

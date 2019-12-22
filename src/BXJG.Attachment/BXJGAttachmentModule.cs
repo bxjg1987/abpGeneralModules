@@ -4,42 +4,33 @@ using Abp.Modules;
 using Abp.Resources.Embedded;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Reflection;
 using System.Text;
-using System.Threading.Tasks;
 
-namespace BXJG.File
+namespace BXJG.Attachment
 {
-    public class BXJGFileModule : AbpModule
+    public class BXJGAttachmentModule : AbpModule
     {
         public override void PreInitialize()
         {
-            IocManager.Register<BXJGFileModuleConfig>();
+            IocManager.Register<BXJGAttachmentModuleConfig>();
 
-            Configuration.EmbeddedResources.Sources.Add(
-                new EmbeddedResourceSet(
-                    "/jqWebUploader/",
-                    Assembly.GetExecutingAssembly(),
-                    "BXJG.File.bxjgJqWebUploader"
-                )
-            );
+
             Configuration.Localization.Sources.Add(
                     new DictionaryBasedLocalizationSource(
-                        BXJGFileConsts.LocalizationSourceName,
+                        BXJGAttachmentConsts.LocalizationSourceName,
                         new XmlEmbeddedFileLocalizationDictionaryProvider(
                             Assembly.GetExecutingAssembly(),
-                            "BXJG.File.Localization.Source"
+                            "BXJG.Attachment.Localization.Source"
                             )
                         )
                     );
 
-            Configuration.Settings.Providers.Add<BXJGFileSettingProvider>();
-            Configuration.Features.Providers.Add<BXJGFileFeatureProvider>();
+            //Configuration.Settings.Providers.Add<BXJGFileSettingProvider>();
+            //Configuration.Features.Providers.Add<BXJGFileFeatureProvider>();
         }
         public override void Initialize()
         {
-           
             IocManager.RegisterAssemblyByConvention(Assembly.GetExecutingAssembly());
         }
     }

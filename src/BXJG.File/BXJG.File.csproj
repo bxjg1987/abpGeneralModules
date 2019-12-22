@@ -3,8 +3,14 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <AssemblyName>BXJG.File</AssemblyName>
-    <RootNamespace>BXJG.File</RootNamespace>
+    <Description>提供一个基于本地文件的文件管理功能,附件模块也依赖它. 
+提供文件实体类 文件领域服管理类, 和一个支持分片上传的辅助类, 
+配有一个基于webUploader和easyui的jquery插件,实现大文件分片多线程上传</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <Version>0.0.1-alpha2</Version>
+    <RepositoryUrl>https://github.com/bxjg1987/abpGeneralModules/tree/master/src/BXJG.File</RepositoryUrl>
+    <RepositoryType>github</RepositoryType>
+    <PackageReleaseNotes>未测试的版本</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
@@ -14,17 +20,17 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Remove="bxjgJqWebUploader\zlj-jquery-easyui-webuploader-0.1.css" />
-    <None Remove="bxjgJqWebUploader\zlj-jquery-easyui-webuploader-0.1.js" />
-    <None Remove="Localization\Source\BXJGGeneralTree-zh-Hans.xml" />
-    <None Remove="Localization\Source\BXJGGeneralTree.xml" />
+    <None Remove="bxjgJqWebUploader\bxjgJqWebUploader.css" />
+    <None Remove="bxjgJqWebUploader\bxjgJqWebUploader.js" />
+    <None Remove="Localization\Source\BXJGFile-zh-Hans.xml" />
+    <None Remove="Localization\Source\BXJGFile.xml" />
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="bxjgJqWebUploader\zlj-jquery-easyui-webuploader-0.1.css" />
-    <EmbeddedResource Include="bxjgJqWebUploader\zlj-jquery-easyui-webuploader-0.1.js" />
-    <EmbeddedResource Include="Localization\Source\BXJGGeneralTree-zh-Hans.xml" />
-    <EmbeddedResource Include="Localization\Source\BXJGGeneralTree.xml" />
+    <EmbeddedResource Include="bxjgJqWebUploader\bxjgJqWebUploader.css" />
+    <EmbeddedResource Include="bxjgJqWebUploader\bxjgJqWebUploader.js" />
+    <EmbeddedResource Include="Localization\Source\BXJGFile-zh-Hans.xml" />
+    <EmbeddedResource Include="Localization\Source\BXJGFile.xml" />
   </ItemGroup>
 
   <ItemGroup>

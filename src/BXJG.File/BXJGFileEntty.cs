@@ -14,7 +14,8 @@ namespace BXJG.File
     /// <summary>
     /// 文件
     /// </summary>
-    public class BXJGFileBaseEntty : FullAuditedEntity<long>//, IMustHaveTenant 同一个文件可以被所有租户引用，至于能否访问是有文件的依赖方决定的
+    [Table("BXJGFiles")]
+    public class BXJGFileEntty : FullAuditedEntity<long>//, IMustHaveTenant 同一个文件可以被所有租户引用，至于能否访问是有文件的依赖方决定的
     {
 
         ///// <summary>
@@ -150,12 +151,12 @@ namespace BXJG.File
         //public long ReferenceCount { get; set; }
     }
 
-    /// <summary>
-    /// 文件
-    /// </summary>
-    [Table("BXJGFiles")]
-    public class BXJGFileEntty : BXJGFileBaseEntty
-    { 
+    ///// <summary>
+    ///// 文件
+    ///// </summary>
     
-    }
+    //public class BXJGFileEntty : BXJGFileBaseEntty
+    //{ 
+    
+    //}
 }

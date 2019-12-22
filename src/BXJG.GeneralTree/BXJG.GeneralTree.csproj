@@ -4,6 +4,14 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryUrl>https://github.com/bxjg1987/abpGeneralModules/tree/master/src/BXJG.GeneralTree</RepositoryUrl>
+    <RepositoryType>github</RepositoryType>
+    <Version>1.0.2</Version>
+    <Description>abp通用树模块,类似abp的组织单位
+内部定义了抽象的Tree和一个默认实现; 抽象的TreeManager和一个默认实现; 抽象的AppService和一个默认实现;
+所以你可以使用默认实现来完成一个类似"通用字典"的功能; 也可以通过子类完全实现自己的通用树,比如类似"区域"(省、市、区县)</Description>
+    <PackageTags>abp GeneralTree 通用树</PackageTags>
+    <PackageReleaseNotes>修复Move的bug; 修复本地化bug</PackageReleaseNotes>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">

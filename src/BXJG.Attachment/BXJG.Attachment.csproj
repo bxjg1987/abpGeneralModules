@@ -2,10 +2,29 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>0.0.1-alpha1</Version>
+    <Description>实现通用附件功能的abp模块，提供抽象实体、领域服务和应用服务，并且都有一个默认的实现。它依赖BXJG.File，</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReleaseNotes>刚开发完成，未测试的版本</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Localization\Source\BXJGAttachment-zh-Hans.xml" />
+    <None Remove="Localization\Source\BXJGAttachment.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Localization\Source\BXJGAttachment-zh-Hans.xml" />
+    <EmbeddedResource Include="Localization\Source\BXJGAttachment.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Abp.AutoMapper" Version="4.11.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BXJG.File\BXJG.File.csproj" />
   </ItemGroup>
 
 </Project>

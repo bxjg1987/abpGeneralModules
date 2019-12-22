@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <AssemblyName>BXJG.File</AssemblyName>
+    <RootNamespace>BXJG.File</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="jqWebUploader\**" />
+    <EmbeddedResource Remove="jqWebUploader\**" />
+    <None Remove="jqWebUploader\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="bxjgJqWebUploader\zlj-jquery-easyui-webuploader-0.1.css" />
+    <None Remove="bxjgJqWebUploader\zlj-jquery-easyui-webuploader-0.1.js" />
+    <None Remove="Localization\Source\BXJGGeneralTree-zh-Hans.xml" />
+    <None Remove="Localization\Source\BXJGGeneralTree.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="bxjgJqWebUploader\zlj-jquery-easyui-webuploader-0.1.css" />
+    <EmbeddedResource Include="bxjgJqWebUploader\zlj-jquery-easyui-webuploader-0.1.js" />
+    <EmbeddedResource Include="Localization\Source\BXJGGeneralTree-zh-Hans.xml" />
+    <EmbeddedResource Include="Localization\Source\BXJGGeneralTree.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Abp.AutoMapper" Version="4.11.0" />
+    <PackageReference Include="Microsoft.AspNet.WebApi.Client" Version="5.2.7" />
+    <PackageReference Include="MimeMapping" Version="1.0.1.26" />
+  </ItemGroup>
+
+</Project>

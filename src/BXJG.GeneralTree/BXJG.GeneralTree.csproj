@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath></OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="CommonAppServiceBase.cs" />
+    <Compile Remove="GeneralTreeAuthorizationProvider.cs" />
+    <Compile Remove="GeneralTreeNavigationProvider.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Localization\Source\BXJGGeneralTree-zh-Hans.xml" />
+    <None Remove="Localization\Source\BXJGGeneralTree.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Localization\Source\BXJGGeneralTree-zh-Hans.xml" />
+    <EmbeddedResource Include="Localization\Source\BXJGGeneralTree.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Abp.AutoMapper" Version="4.11.0" />
+  </ItemGroup>
+
+</Project>

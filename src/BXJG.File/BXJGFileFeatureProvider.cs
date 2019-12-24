@@ -18,8 +18,8 @@ namespace BXJG.File
             context.Create(
                 BXJGFileConsts.MaxFileUploadSizeFeature,
                 BXJGFileConsts.MaxFileUploadSizeFeatureDefault.ToString(),//2gb
-                BXJGFileConsts.MaxFileUploadSizeFeatureDisplayNameLocalizableString.BXJGL(),
-                BXJGFileConsts.MaxFileUploadSizeFeatureDiscriptionLocalizableString.BXJGL(),
+                BXJGFileConsts.MaxFileUploadSizeFeatureDisplayNameLocalizableString.BXJGFileL(),
+                BXJGFileConsts.MaxFileUploadSizeFeatureDiscriptionLocalizableString.BXJGFileL(),
                 FeatureScopes.All,
                 new SingleLineStringInputType(new NumericValueValidator(0, (int)BXJGFileConsts.MaxFileUploadSizeFeatureDefault))); 
         }

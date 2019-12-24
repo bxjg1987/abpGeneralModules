@@ -106,7 +106,7 @@ namespace BXJG.Attachment
         /// <summary>
         /// 获取附件及其文件
         /// </summary>
-        /// <param name="id"></param>
+        /// <param name="id">附件id</param>
         /// <returns></returns>
         public Task<TAttachment> GetWithFileByIdAsync(long id)
         {

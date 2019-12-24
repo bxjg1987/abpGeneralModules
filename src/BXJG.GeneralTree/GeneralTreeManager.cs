@@ -154,7 +154,7 @@ namespace BXJG.GeneralTree
                 else
                 {
                     targetChildren = await GetFlattenOffspringAsync();
-                    targetChildren = targetChildren.Where(c => c.ParentId ==null).ToList();
+                    targetChildren = targetChildren.Where(c => c.ParentId == null).ToList();
                 }
                 targetIndex = targetChildren.Count;
             }
@@ -162,6 +162,14 @@ namespace BXJG.GeneralTree
         }
 
 
+        public Task<string> GetCodeAsync(long id)
+        {
+            return AsyncQueryableExecuter.FirstOrDefaultAsync(repository.GetAll().Where(c => c.Id == id).Select(c => c.Code));
+        }
+        public string GetCode(long id)
+        {
+            return repository.GetAll().Where(c => c.Id == id).Select(c => c.Code).Single();
+        }
         async Task<TEntity> MoveAsync(long sourceId, TEntity target, IList<TEntity> targetList, int targetIndex)
         {
             var source = await repository.GetAsync(sourceId);

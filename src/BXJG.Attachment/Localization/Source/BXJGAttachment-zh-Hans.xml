@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <localizationDictionary culture="zh-Hans">
   <texts>
-    <text name="数据字典" value="数据字典" />
+    <text name="验证已通过！请上传。" value="验证已通过！请上传。" />
     <text name="此节点不允许修改！" value="此节点不允许修改！" />
     <text name="是" value="是" />
     <text name="否" value="否" />

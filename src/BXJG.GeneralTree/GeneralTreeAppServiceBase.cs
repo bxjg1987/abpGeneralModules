@@ -33,8 +33,8 @@ namespace BXJG.GeneralTree
     /// <typeparam name="long"></typeparam>
     /// <typeparam name="TDto"></typeparam>
     /// <typeparam name="TEditDto"></typeparam>
-    public abstract class GeneralTreeAppServiceBase< TEntity,  TDto, TEditDto> : ApplicationService //CommonAppServiceBase<TTenant, TUser, TRole>
-      
+    public  class GeneralTreeAppServiceBase< TEntity,  TDto, TEditDto> : ApplicationService,
+        IGeneralTreeAppServiceBase<TDto, TEditDto>
         where TEntity : GeneralTreeEntity<TEntity>
         where TDto : GeneralTreeGetTreeNodeBaseDto<TDto>, new()
         where TEditDto : GeneralTreeNodeEditBaseDto//父类可以对输入做一定的处理

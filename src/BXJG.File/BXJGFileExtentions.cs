@@ -1,4 +1,5 @@
 ﻿using Abp.Configuration;
+using Abp.Configuration.Startup;
 using Abp.Localization;
 using System;
 using System.Collections.Generic;
@@ -10,6 +11,15 @@ namespace BXJG.File
 {
     public static class BXJGFileExtentions
     {
+        /// <summary>
+        /// 获取文件模块的配置对象
+        /// </summary>
+        /// <param name="moduleConfigurations"></param>
+        /// <returns></returns>
+        public static BXJGFileModuleConfig BXJGFielModuleConfig(this IModuleConfigurations moduleConfigurations)
+        {
+            return moduleConfigurations.AbpConfiguration.Get<BXJGFileModuleConfig>();
+        }
         public static string GetMD5ByFilePath(this string fileName)
         {
             using (FileStream file = new FileStream(fileName, FileMode.Open))
@@ -55,9 +65,10 @@ namespace BXJG.File
         //    };
         //}
 
-        public static ILocalizableString BXJGL(this string name)
+        public static ILocalizableString BXJGFileL(this string name)
         {
             return new LocalizableString(name, BXJGFileConsts.LocalizationSourceName);
         }
+
     }
 }

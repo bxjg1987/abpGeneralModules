@@ -3,10 +3,12 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>0.0.1-alpha1</Version>
+    <Version>0.0.1-alpha2</Version>
     <Description>实现通用附件功能的abp模块，提供抽象实体、领域服务和应用服务，并且都有一个默认的实现。它依赖BXJG.File，</Description>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageReleaseNotes>刚开发完成，未测试的版本</PackageReleaseNotes>
+    <PackageReleaseNotes>基本测试通过</PackageReleaseNotes>
+    <RepositoryUrl>https://github.com/bxjg1987/abpGeneralModules/tree/master/src/BXJG.Attachment</RepositoryUrl>
+    <PackageTags>abp 附件 Attachment</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>

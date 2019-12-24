@@ -1,12 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <localizationDictionary culture="zh-Hans">
   <texts>
-    <text name="数据字典" value="数据字典" />
-    <text name="此节点不允许修改！" value="此节点不允许修改！" />
-    <text name="是" value="是" />
-    <text name="否" value="否" />
-    <text name="全部" value="全部" />
-    <text name="不限" value="不限" />
-    <text name="请选择" value="请选择" />
+    <text name="MD5校验失败！" value="MD5校验失败！" />
+    <text name="上传文件的总大小超过限制" value="上传文件的总大小超过限制" />
+    <text name="允许上传{0}Mb，实际已上传{1}Mb" value="允许上传{0}Mb，实际已上传{1}Mb" />
+    <text name="不支持的上传文件的类型" value="不支持的上传文件的类型" />
+    <text name="允许的类型为：{0}" value="允许的类型为：{0}" />
   </texts>
 </localizationDictionary>

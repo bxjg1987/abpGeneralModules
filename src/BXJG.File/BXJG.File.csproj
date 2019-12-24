@@ -3,14 +3,16 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Description>提供一个基于本地文件的文件管理功能,附件模块也依赖它. 
+    <Description>基于abp的文件管理模块
+提供一个基于本地文件的文件管理功能,附件模块也依赖它. 
 提供文件实体类 文件领域服管理类, 和一个支持分片上传的辅助类, 
 配有一个基于webUploader和easyui的jquery插件,实现大文件分片多线程上传</Description>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <Version>0.0.1-alpha2</Version>
+    <Version>0.0.1-alpha3</Version>
     <RepositoryUrl>https://github.com/bxjg1987/abpGeneralModules/tree/master/src/BXJG.File</RepositoryUrl>
     <RepositoryType>github</RepositoryType>
-    <PackageReleaseNotes>未测试的版本</PackageReleaseNotes>
+    <PackageReleaseNotes>基本测试通过</PackageReleaseNotes>
+    <PackageTags>abp filemanager filemanager</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>

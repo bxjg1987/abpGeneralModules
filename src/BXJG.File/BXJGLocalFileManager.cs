@@ -318,7 +318,7 @@ namespace BXJG.File
                 var t = repository.HardDeleteAsync(item).ContinueWith(t1 =>
                 {
                     list.Add(item.Id);
-                   System.IO. File.Delete(item.AbsolutePath);
+                   System.IO. File.Delete(item.GetAbsolutePath());
 
                 }, TaskContinuationOptions.NotOnFaulted).ContinueWith(c =>
                 {

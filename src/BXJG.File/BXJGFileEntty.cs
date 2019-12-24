@@ -11,6 +11,8 @@ using System.Threading.Tasks;
 
 namespace BXJG.File
 {
+    //类似Extension属性，由于每次都是计算计算得到的，本应该使用GetExtension方法
+
     /// <summary>
     /// 文件
     /// </summary>
@@ -55,24 +57,20 @@ namespace BXJG.File
         ///// 0
         ///// </summary>
         //public int ConsistencyState { get; set; }
+
         /// <summary>
-                                         /// 获取文件扩展名，如：.txt
-                                         /// </summary>
-        public string Extension
+        /// 获取文件扩展名，如：.txt
+        /// </summary>
+        public string GetExtension()
         {
-            //本来应该定义为GetExtension()
-            get { return System.IO.Path.GetExtension(this.Path); }
+            return System.IO.Path.GetExtension(this.Path);
         }
         /// <summary>
         /// 获取MIME类型(根据Extension获取)
         /// </summary>
-        public string Mime
+        public string GetMime()
         {
-           // GetMime()
-            get
-            {
-                return MimeMapping.MimeUtility.GetMimeMapping(this.Extension);
-            }
+            return MimeMapping.MimeUtility.GetMimeMapping(this.GetExtension());
         }
         /// <summary>
         /// 获取文件的物理路径
@@ -86,24 +84,17 @@ namespace BXJG.File
         /// <summary>
         /// 获取访问的相对路径，如：upload\employeeinfo\xxx.jpg
         /// </summary>
-        public string RelativePath
+        public string GetRelativePath()
         {
-            //本来应该定义为GetRelativePath()
-            get
-            {
-                return System.IO.Path.Combine(BXJGFileConsts.UploadRoot, this.Path);
-            }
+            return System.IO.Path.Combine(BXJGFileConsts.UploadRoot, this.Path);
         }
         /// <summary>
         /// 获取服务器上的物理路径，如：D:\www\abp\upload\employeeinfo\xxx.jpg
         /// </summary>
-        public string AbsolutePath
+        public string GetAbsolutePath()
         {
-            //本来应该定义为GetAbsolutePath()
-            get
-            {
-                return System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, this.RelativePath);
-            }
+         
+                return System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, this.GetRelativePath());
         }
         /*
          * 定时任务尝试删除每一个文件
@@ -127,8 +118,9 @@ namespace BXJG.File
         /// </summary>
         public void RefreshAsync()
         {
-            var fileInfo = new FileInfo(AbsolutePath);
-            MD5 = AbsolutePath.GetMD5ByFilePath();
+            var ttt = GetAbsolutePath();
+            var fileInfo = new FileInfo(ttt);
+            MD5 = ttt.GetMD5ByFilePath();
             Size = fileInfo.Length;
             LastModificationTime = fileInfo.LastWriteTime;
             //ReferenceLastTime = DateTime.Now;
@@ -140,7 +132,7 @@ namespace BXJG.File
         public Stream GetStream()
         {
             //return File.OpenRead(AbsolutePath);
-            return System.IO.File.Open(AbsolutePath, FileMode.Open, FileAccess.Read, FileShare.Read);
+            return System.IO.File.Open(GetAbsolutePath(), FileMode.Open, FileAccess.Read, FileShare.Read);
         }
         //反正每个有用的文件始终会被引用，因此通过数据库外键方式来做定时任务的删除依据
         //因为使用这种方式 需要自己来做乐观并发
@@ -154,9 +146,9 @@ namespace BXJG.File
     ///// <summary>
     ///// 文件
     ///// </summary>
-    
+
     //public class BXJGFileEntty : BXJGFileBaseEntty
     //{ 
-    
+
     //}
 }

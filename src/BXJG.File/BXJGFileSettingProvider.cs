@@ -11,15 +11,15 @@ namespace BXJG.File
         {
             var group = new SettingDefinitionGroup(
                BXJGFileConsts.FileUploadSettingGroup,
-               BXJGFileConsts.FileUploadSettingGroupLocalizableString.BXJGL());
+               BXJGFileConsts.FileUploadSettingGroupLocalizableString.BXJGFileL());
 
             return new[] {
                 new SettingDefinition(
                     BXJGFileConsts.FileUploadExtensionSetting,
                     BXJGFileConsts.FileUploadExtensionDefaultSetting,
-                    BXJGFileConsts.FileUploadExtensionSettingDisplayNameLocalizableString.BXJGL(),
+                    BXJGFileConsts.FileUploadExtensionSettingDisplayNameLocalizableString.BXJGFileL(),
                     group,
-                    BXJGFileConsts.FileUploadExtensionSettingDescriptionLocalizableString.BXJGL(),
+                    BXJGFileConsts.FileUploadExtensionSettingDescriptionLocalizableString.BXJGFileL(),
                     isVisibleToClients:true)
             };
         }

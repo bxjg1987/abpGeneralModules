@@ -25,7 +25,7 @@ namespace BXJG.GeneralTree
      */
     //[AbpAuthorize(PermissionNames.AdministratorSystemAdministrative)]
     public class GeneralTreeAppService
-        : GeneralTreeAppServiceBase< GeneralTreeEntity, GeneralTreeDto, GeneralTreeEditDt>,
+        : GeneralTreeAppServiceBase< GeneralTreeEntity, GeneralTreeDto, GeneralTreeEditDt, GeneralTreeManager>,
         IGeneralTreeAppService
     {
         public GeneralTreeAppService(

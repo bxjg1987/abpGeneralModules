@@ -33,11 +33,12 @@ namespace BXJG.GeneralTree
     /// <typeparam name="long"></typeparam>
     /// <typeparam name="TDto"></typeparam>
     /// <typeparam name="TEditDto"></typeparam>
-    public  class GeneralTreeAppServiceBase< TEntity,  TDto, TEditDto> : ApplicationService,
+    public  class GeneralTreeAppServiceBase< TEntity,  TDto, TEditDto,TManager> : ApplicationService,
         IGeneralTreeAppServiceBase<TDto, TEditDto>
         where TEntity : GeneralTreeEntity<TEntity>
         where TDto : GeneralTreeGetTreeNodeBaseDto<TDto>, new()
         where TEditDto : GeneralTreeNodeEditBaseDto//父类可以对输入做一定的处理
+        where TManager: GeneralTreeManager<TEntity>
     {
         /* 
          * 数据显示地方有：管理页列表、作为一个搜索条件框、作为表单里一个下拉框
@@ -46,14 +47,14 @@ namespace BXJG.GeneralTree
 
         protected string allTextForManager, allTextForSearch, allTextForForm;//注意这里代表的是本地化文本的key
         public IAsyncQueryableExecuter AsyncQueryableExecuter { get; set; }//属性注入
-        protected readonly GeneralTreeManager<TEntity> generalTreeManager;
+        protected readonly TManager generalTreeManager;
         protected readonly IRepository<TEntity, long> ownRepository;
 
         protected string createPermissionName, updatePermissionName, deletePermissionName, getPermissionName;
 
         public GeneralTreeAppServiceBase(
             IRepository<TEntity, long> ownRepository,
-            GeneralTreeManager<TEntity> organizationUnitManager,
+            TManager organizationUnitManager,
             string createPermissionName = null,
             string updatePermissionName = null,
             string deletePermissionName = null,

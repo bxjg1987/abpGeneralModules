@@ -19,13 +19,13 @@ namespace BXJG.GeneralTree
     /// <summary>
     /// 树形结构抽象编辑模型
     /// </summary>
-    public class GeneralTreeNodeEditBaseDto : IEntityDto<long>
+    public class GeneralTreeNodeEditBaseDto : EntityDto<long>
     {
         /// <summary>
         /// Id
         /// </summary>
         //[Range(0, long.MaxValue)]
-        public long Id { get; set; }
+       // public long Id { get; set; }
         /// <summary>
         /// 父级id
         /// </summary>

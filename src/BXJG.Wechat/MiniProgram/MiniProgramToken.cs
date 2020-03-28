@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Text.Json;
 
-namespace BXJG.WeChart.MiniProgram
+namespace BXJG.WeChat.MiniProgram
 {
     /// <summary>
     /// 参考Twitter中的AccessToken

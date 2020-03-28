@@ -1,5 +1,6 @@
 ﻿using Abp.Application.Navigation;
 using Abp.Authorization;
+using BXJG.Utils.Localization;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,23 +20,34 @@ namespace BXJG.GeneralTree
         ///// 且您应该在您的AuthorizationProvider中定义权限，权限名定义在GeneralTreeConsts中
         ///// </summary>
         //public bool EnableGeneralTreeDynamicWebApi { get; set; } = true;
-
-        public Permission InitPermission(Permission parent)
+        private Permission InitPermission1(Permission admin)
         {
-            var admin = parent.CreateChildPermission(GeneralTreeConsts.GeneralTreeGetPermissionName, "数据字典".L1());
-            admin.CreateChildPermission(GeneralTreeConsts.GeneralTreeCreatePermissionName, "新增".L1());
-            admin.CreateChildPermission(GeneralTreeConsts.GeneralTreeUpdatePermissionName, "修改".L1());
-            admin.CreateChildPermission(GeneralTreeConsts.GeneralTreeDeletePermissionName, "删除".L1());
+            admin.CreateChildPermission(GeneralTreeConsts.GeneralTreeCreatePermissionName, "新增".UtilsLI());
+            admin.CreateChildPermission(GeneralTreeConsts.GeneralTreeUpdatePermissionName, "修改".UtilsLI());
+            admin.CreateChildPermission(GeneralTreeConsts.GeneralTreeDeletePermissionName, "删除".UtilsLI());
             return admin;
         }
+        public Permission InitPermission(IPermissionDefinitionContext context)
+        {
+            Permission admin = context.CreatePermission(GeneralTreeConsts.GeneralTreeGetPermissionName, "数据字典".GeneralTreeLI());
+            return InitPermission1(admin);
+        }
+        public Permission InitPermission(Permission parent)
+        {
+            var admin = parent.CreateChildPermission(GeneralTreeConsts.GeneralTreeGetPermissionName, "数据字典".GeneralTreeLI());
+            return InitPermission1(admin);
+        }
 
-        public MenuItemDefinition InitNav(MenuItemDefinition menuItemDefinition) {
+
+        public MenuItemDefinition InitNav(MenuItemDefinition menuItemDefinition)
+        {
             var zcgl = new MenuItemDefinition(GeneralTreeConsts.GeneralTreeMenuName,
-                                                  "数据字典".L1(),
+                                                  "数据字典".GeneralTreeLI(),
                                                   icon: "generalTree",
-                                                  requiredPermissionName: GeneralTreeConsts.GeneralTreeGetPermissionName);
+                                                  permissionDependency: new SimplePermissionDependency(GeneralTreeConsts.GeneralTreeGetPermissionName));
             menuItemDefinition.AddItem(zcgl);
             return zcgl;
         }
+     
     }
 }

@@ -3,10 +3,11 @@ using Microsoft.AspNetCore.Authentication.OAuth.Claims;
 using Microsoft.AspNetCore.Http;
 using System;
 using System.Collections.Generic;
+using System.Net.Http;
 using System.Security.Claims;
 using System.Text;
 
-namespace BXJG.WeChart.MiniProgram
+namespace BXJG.WeChat.MiniProgram
 {
     /// <summary>
     /// 微信小程序身份验证方案关联的选项对象
@@ -17,7 +18,7 @@ namespace BXJG.WeChart.MiniProgram
     /// 3、MiniProgramAuthenticationOptions
     /// 4、MiniProgramAuthenticationHandler的构造函数
     /// </summary>
-    public class MiniProgramAuthenticationOptions : RemoteAuthenticationOptions
+    public class MiniProgramAuthenticationOptions : AuthenticationSchemeOptions
     {
         public MiniProgramAuthenticationOptions()
         {
@@ -43,7 +44,7 @@ namespace BXJG.WeChart.MiniProgram
         /// </summary>
         public override void Validate()
         {
-            base.Validate();
+            //base.Validate();
 
             if (string.IsNullOrEmpty(AppId))
             {
@@ -64,17 +65,35 @@ namespace BXJG.WeChart.MiniProgram
                 throw new ArgumentException();
             }
         }
-
-        public ClaimActionCollection ClaimActions { get; } = new ClaimActionCollection();
-
+        /// <summary>
+        /// 向微信发起请求时使用的HttpClient，已有默认实现
+        /// </summary>
+        public HttpClient Backchannel { get; set; }
+        //public ClaimActionCollection ClaimActions { get; } = new ClaimActionCollection();
+        /// <summary>
+        /// 前端使用微信登录发起的请求地址，默认MiniProgramConsts.CallbackPath=/wechart-miniProgram-signin
+        /// </summary>
+        public PathString CallbackPath { get; set; }
+        /// <summary>
+        /// 中间件向微信发起请求以获得微信用户信息的地址，默认"https://api.weixin.qq.com/sns/jscode2session";
+        /// </summary>
         public string UserInformationEndpoint { get; set; }
-
+        /// <summary>
+        /// 中间件向微信发起请求时的超时时间，默认30秒
+        /// </summary>
+        public TimeSpan BackchannelTimeout { get; set; }
         public string AppId { get; set; }
 
         public string Secret { get; set; }
-
+        /// <summary>
+        /// 处理器，也有默认值
+        /// </summary>
+        public HttpMessageHandler BackchannelHttpHandler { get; set; }
         //public ISecureDataFormat<AuthenticationProperties> StateDataFormat { get; set; }
 
+        /// <summary>
+        /// 暂时忽略，预留回调事件
+        /// </summary>
         public new MiniProgramAuthenticationEvent Events
         {
             get => (MiniProgramAuthenticationEvent)base.Events;

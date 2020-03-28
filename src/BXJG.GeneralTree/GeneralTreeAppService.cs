@@ -15,18 +15,20 @@ using Abp.MultiTenancy;
 
 namespace BXJG.GeneralTree
 {
-    /*
-     * 扩展方式一般有继承和组合，此处使用继承
-     * Repository可以使用子类的或父类的
-     * 由于父类存储Children属性，并且类型为父类的类型，因此AutoMapper映射时应该取消Children属性的映射，并手动处理
-     * 也可以在子类实体覆盖Children属性
-     * 
-     * 新增时用管理类操作可以自动处理Code
-     */
-    //[AbpAuthorize(PermissionNames.AdministratorSystemAdministrative)]
-    public class GeneralTreeAppService
-        : GeneralTreeAppServiceBase< GeneralTreeEntity, GeneralTreeDto, GeneralTreeEditDt, GeneralTreeManager>,
-        IGeneralTreeAppService
+    /// <summary>
+    /// 数据字典应用服务类
+    /// </summary>
+    public class GeneralTreeAppService : GeneralTreeAppServiceBase< 
+            GeneralTreeDto,
+            GeneralTreeEditDto,
+            GeneralTreeGetTreeInput,
+            GeneralTreeGetForSelectInput,
+            GeneralTreeNodeDto,
+            GeneralTreeGetForSelectInput,
+            GeneralTreeComboboxDto,
+            GeneralTreeNodeMoveInput,
+            GeneralTreeEntity,
+            GeneralTreeManager>,IGeneralTreeAppService
     {
         public GeneralTreeAppService(
             IRepository<GeneralTreeEntity, long> repository,
@@ -41,6 +43,7 @@ namespace BXJG.GeneralTree
 
         public override async Task DeleteAsync(EntityDto<long> input)
         {
+           await base.CheckDeletePermissionAsync();
             var sd = await base.ownRepository.GetAsync(input.Id);
             if (sd.IsSysDefine)
                 throw new UserFriendlyException(L("系统预设数据不允许删除！"));

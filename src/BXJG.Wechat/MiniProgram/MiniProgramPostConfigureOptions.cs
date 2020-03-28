@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Net.Http;
 using System.Text;
 
-namespace BXJG.WeChart.MiniProgram
+namespace BXJG.WeChat.MiniProgram
 {
     /*
      * 参考OAuthPostConfigureOptions<TOptions, THandler>
@@ -39,7 +39,7 @@ namespace BXJG.WeChart.MiniProgram
         /// <param name="options">The options instance to configure.</param>
         public void PostConfigure(string name, MiniProgramAuthenticationOptions options)
         {
-            options.DataProtectionProvider = options.DataProtectionProvider ?? _dp;
+           // options.DataProtectionProvider = options.DataProtectionProvider ?? _dp;
 
             //这段是推特的
             //if (options.StateDataFormat == null)

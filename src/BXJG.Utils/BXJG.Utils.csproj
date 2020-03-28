@@ -1,0 +1,53 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <!--<TargetFramework>netstandard2.1</TargetFramework>-->
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Application\**" />
+    <EmbeddedResource Remove="Application\**" />
+    <None Remove="Application\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Enums\GetForCombboxType.cs" />
+    <Compile Remove="Extensions\StreamExtension.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Localization\SourceFiles\BXJGUtils-es.xml" />
+    <None Remove="Localization\SourceFiles\BXJGUtils-fr.xml" />
+    <None Remove="Localization\SourceFiles\BXJGUtils-it.xml" />
+    <None Remove="Localization\SourceFiles\BXJGUtils-ja.xml" />
+    <None Remove="Localization\SourceFiles\BXJGUtils-lt.xml" />
+    <None Remove="Localization\SourceFiles\BXJGUtils-nl.xml" />
+    <None Remove="Localization\SourceFiles\BXJGUtils-pt-BR.xml" />
+    <None Remove="Localization\SourceFiles\BXJGUtils-tr.xml" />
+    <None Remove="Localization\SourceFiles\BXJGUtils-zh-Hans.xml" />
+    <None Remove="Localization\SourceFiles\BXJGUtils.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Localization\SourceFiles\BXJGUtils-es.xml" />
+    <EmbeddedResource Include="Localization\SourceFiles\BXJGUtils-fr.xml" />
+    <EmbeddedResource Include="Localization\SourceFiles\BXJGUtils-it.xml" />
+    <EmbeddedResource Include="Localization\SourceFiles\BXJGUtils-ja.xml" />
+    <EmbeddedResource Include="Localization\SourceFiles\BXJGUtils-lt.xml" />
+    <EmbeddedResource Include="Localization\SourceFiles\BXJGUtils-nl.xml" />
+    <EmbeddedResource Include="Localization\SourceFiles\BXJGUtils-pt-BR.xml" />
+    <EmbeddedResource Include="Localization\SourceFiles\BXJGUtils-tr.xml" />
+    <EmbeddedResource Include="Localization\SourceFiles\BXJGUtils-zh-Hans.xml" />
+    <EmbeddedResource Include="Localization\SourceFiles\BXJGUtils.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Abp" Version="5.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Application\" />
+  </ItemGroup>
+
+</Project>

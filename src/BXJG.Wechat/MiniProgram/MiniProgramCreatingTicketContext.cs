@@ -7,7 +7,7 @@ using System.Security.Claims;
 using System.Text;
 using System.Text.Json;
 
-namespace BXJG.WeChart.MiniProgram
+namespace BXJG.WeChat.MiniProgram
 {
     /// <summary>
     /// 从微信获取openid、session_key后会创建identity，然后回调Opetions.ClaimActions进行identity.Claims赋值

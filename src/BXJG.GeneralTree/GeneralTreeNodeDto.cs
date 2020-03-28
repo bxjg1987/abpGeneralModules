@@ -9,15 +9,15 @@ namespace BXJG.GeneralTree
     /// <summary>
     /// 获取树形下拉框数据的模型
     /// </summary>
-    public class GeneralTreeNodeDto
+    public class GeneralTreeNodeDto<T> where T: GeneralTreeNodeDto<T>
     {
-        public string id { get; set; }
+        public string id { get; set; }//用id是为了适配easyui的tree  combotree共用此模型
         public string text { get; set; }
         public string iconCls { get; set; }
         public bool @checked { get; set; }
         public string state { get; set; } = "open";
         public dynamic attributes { get; set; }
-        public IList<GeneralTreeNodeDto> children { get; set; }
+        public IList<T> children { get; set; }
 
         public string parentId { get; set; }
 
@@ -61,4 +61,6 @@ namespace BXJG.GeneralTree
             }
         }
     }
+
+    public class GeneralTreeNodeDto : GeneralTreeNodeDto<GeneralTreeNodeDto> { }
 }

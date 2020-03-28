@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyName>BXJG.WeChat</AssemblyName>
+    <Authors>变形精怪</Authors>
+    <RepositoryUrl>https://github.com/bxjg1987/abpGeneralModules</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <Description>轻量的asp.net core 3.1版本的微信小程序登录库（无其它微信功能），基于asp.net core默认的Google账号登录实现。使用说明请参考：https://www.cnblogs.com/jionsoft/p/12551143.html 或者：https://share.weiyun.com/57HKopT</Description>
+    <Version>1.0.0</Version>
+    <PackageProjectUrl>https://github.com/bxjg1987/abpGeneralModules</PackageProjectUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageId>BXJG.WeChat</PackageId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="MiniProgram\MiniProgramCreatingTicketContext.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Twitter" Version="3.1.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BXJG.Utils\BXJG.Utils.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Common\" />
+  </ItemGroup>
+
+</Project>

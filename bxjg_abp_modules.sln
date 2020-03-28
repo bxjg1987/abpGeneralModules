@@ -1,0 +1,71 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29609.76
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BXJG.Attachment", "src\BXJG.Attachment\BXJG.Attachment.csproj", "{B0E02295-B483-4448-B213-51DBFDE1C190}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BXJG.File", "src\BXJG.File\BXJG.File.csproj", "{1AD04E56-6CE2-4D61-B345-BDE965A32E44}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BXJG.WeChat", "src\BXJG.Wechat\BXJG.WeChat.csproj", "{3A9D32BB-620D-4D30-910B-40A2F307A2B4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BXJG.Utils", "src\BXJG.Utils\BXJG.Utils.csproj", "{D160540C-68EE-49AD-BD97-71E3B5F5936B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BXJG.GeneralTree", "src\BXJG.GeneralTree\BXJG.GeneralTree.csproj", "{609DBA3C-A082-4B66-86D8-ABCF941317A5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Files", "Files", "{91B4B77F-56B1-4054-8C34-8D28A1BF431C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ABP.Web.Host", "ABP.Web.Host", "{7D3B9367-8FA0-4E2B-B059-78881289A3BC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Startup", "Startup", "{763E830F-0E45-4021-AF58-9360A1A445AE}"
+	ProjectSection(SolutionItems) = preProject
+		src\Files\ABP.Web.Host\Startup\AuthConfigurer.cs = src\Files\ABP.Web.Host\Startup\AuthConfigurer.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ABP.Web.Core", "ABP.Web.Core", "{4D8C7884-B0DB-4926-8E56-1D5C5A44F03F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WeChatMiniProgram", "WeChatMiniProgram", "{1EE994EE-D06C-4C88-A367-9563A09E0B11}"
+	ProjectSection(SolutionItems) = preProject
+		src\Files\ABP.Web.Core\WeChatMiniProgram\WeChatMiniProgramLoginHandler.cs = src\Files\ABP.Web.Core\WeChatMiniProgram\WeChatMiniProgramLoginHandler.cs
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B0E02295-B483-4448-B213-51DBFDE1C190}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0E02295-B483-4448-B213-51DBFDE1C190}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0E02295-B483-4448-B213-51DBFDE1C190}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0E02295-B483-4448-B213-51DBFDE1C190}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1AD04E56-6CE2-4D61-B345-BDE965A32E44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AD04E56-6CE2-4D61-B345-BDE965A32E44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AD04E56-6CE2-4D61-B345-BDE965A32E44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AD04E56-6CE2-4D61-B345-BDE965A32E44}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A9D32BB-620D-4D30-910B-40A2F307A2B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A9D32BB-620D-4D30-910B-40A2F307A2B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A9D32BB-620D-4D30-910B-40A2F307A2B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A9D32BB-620D-4D30-910B-40A2F307A2B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D160540C-68EE-49AD-BD97-71E3B5F5936B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D160540C-68EE-49AD-BD97-71E3B5F5936B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D160540C-68EE-49AD-BD97-71E3B5F5936B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D160540C-68EE-49AD-BD97-71E3B5F5936B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{609DBA3C-A082-4B66-86D8-ABCF941317A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{609DBA3C-A082-4B66-86D8-ABCF941317A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{609DBA3C-A082-4B66-86D8-ABCF941317A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{609DBA3C-A082-4B66-86D8-ABCF941317A5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7D3B9367-8FA0-4E2B-B059-78881289A3BC} = {91B4B77F-56B1-4054-8C34-8D28A1BF431C}
+		{763E830F-0E45-4021-AF58-9360A1A445AE} = {7D3B9367-8FA0-4E2B-B059-78881289A3BC}
+		{4D8C7884-B0DB-4926-8E56-1D5C5A44F03F} = {91B4B77F-56B1-4054-8C34-8D28A1BF431C}
+		{1EE994EE-D06C-4C88-A367-9563A09E0B11} = {4D8C7884-B0DB-4926-8E56-1D5C5A44F03F}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AE9BA8D5-B28F-4A1E-AC91-F2F0E016735B}
+	EndGlobalSection
+EndGlobal

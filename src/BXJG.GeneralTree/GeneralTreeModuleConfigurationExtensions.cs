@@ -9,7 +9,7 @@ namespace BXJG.GeneralTree
 {
     public static class GeneralTreeModuleConfigurationExtensions
     {
-        public static GeneralTreeModuleConfig CommonModule(this IModuleConfigurations moduleConfigurations)
+        public static GeneralTreeModuleConfig BXJGGeneralTree(this IModuleConfigurations moduleConfigurations)
         {
             return moduleConfigurations.AbpConfiguration.Get<GeneralTreeModuleConfig>();
         }

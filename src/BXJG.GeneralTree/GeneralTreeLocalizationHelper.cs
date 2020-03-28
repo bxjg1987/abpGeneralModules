@@ -9,12 +9,12 @@ namespace BXJG.GeneralTree
 {
     public static class GeneralTreeLocalizationHelper
     {
-        public static string L(this string key)
+        public static string GeneralTreeL(this string key)
         {
             return Abp.Localization.LocalizationHelper.GetString(GeneralTreeConsts.LocalizationSourceName, key);
         }
 
-        public static ILocalizableString L1(this string key)
+        public static ILocalizableString GeneralTreeLI(this string key)
         {
             return new LocalizableString(key, GeneralTreeConsts.LocalizationSourceName);
         }

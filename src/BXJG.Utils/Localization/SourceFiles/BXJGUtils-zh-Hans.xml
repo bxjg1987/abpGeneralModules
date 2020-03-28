@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<localizationDictionary culture="zh-Hans">
+  <texts>
+    <text name="操作成功！" value="操作成功！" />
+    <text name="操作失败！" value="操作失败！" />
+    <text name="新增成功！" value="新增成功！" />
+    <text name="新增失败！" value="新增失败！" />
+    <text name="修改成功！" value="修改成功！" />
+    <text name="修改失败！" value="修改失败！" />
+    <text name="删除成功！" value="删除成功！" />
+    <text name="删除失败！" value="删除失败！" />
+
+    <text name="此节点不允许修改！" value="此节点不允许修改！" />
+    <text name="True" value="是" />
+    <text name="False" value="否" />
+    <text name="不限" value="==不限==" />
+    <text name="Please select role" value="==角色==" />
+    <text name="请选择" value="==请选择==" />
+    <text name="全部" value="全部" />
+    <text name="新增" value="新增" />
+    <text name="修改" value="修改" />
+    <text name="删除" value="删除" />
+    <text name="查询" value="查询" />
+    <text name="Nationwide" value="全国" />
+    <text name="HomePage" value="主页" />
+    <text name="About" value="关于我们" />
+    <text name="WellcomeMessage" value="欢迎使用 ABP!" />
+    <text name="WeChat">微信</text>
+    <text name="WeChatIndex">说明</text>
+    <text name="Demo">演示</text>
+    <text name="Upload">上传</text>
+    <text name="Sheng">省/自治区/直辖市</text>
+    <text name="Shi">市/自治州/县/自治县</text>
+    <text name="QuXian">乡/镇</text>
+    <text name="HeadOffice">总部</text>
+    <text name="Branch">分公司/办事处</text>
+    <text name="Department1">部门</text>
+    <text name="FormIsNotValidMessage" value="部分输入信息不符合要求,请检查并改正." />
+    <text name="TenantNameCanNotBeEmpty" value="租户名不能为空" />
+    <text name="刷新" value="刷新" />
+    <text name="CurrentTenant">当前租户</text>
+    <text name="Change">修改</text>
+    <text name="ChangeTenant">请输入租户名(如:default)</text>
+    <text name="NotSelected">未设置</text>
+    <text name="LeaveEmptyToSwitchToHost">这是一个SAAS(软件即服务)平台，不同客户使用同一套程序，但数据完全隔离。不同租户使用“租户名”来区分。若此处不输入则表示进入管理后台，将无法看到具体的业务数据，您可以输入“default” 进入默认租户后台</text>
+    <text name="InvalidUserNameOrPassword" value="用户名或密码无效" />
+    <text name="ThereIsNoTenantDefinedWithName{0}" value="租户 {0}不存在" />
+    <text name="TenantIsNotActive" value="租户 {0} 未激活." />
+    <text name="UserIsNotActiveAndCanNotLogin" value="用户 {0} 未激活,不能登录." />
+    <text name="UserEmailIsNotConfirmedAndCanNotLogin">你的邮箱地址未确认.不能登录</text>
+    <text name="UserLockedOutMessage">该用户帐户已经被锁定.请稍后重试.</text>
+    <text name="PleaseEnterLoginInformation" value="请输入登录信息" />
+    <text name="TenancyName" value="租户名称" />
+    <text name="UserNameOrEmail" value="用户名或邮箱地址" />
+    <text name="密码" value="密码" />
+    <text name="RememberMe" value="记住我" />
+    <text name="YouCanNotDeleteOwnAccount" value="不许自杀！" />
+    <text name="YouCanNotDeleteAdmin" value="不许杀大Boss！" />
+    <text name="登录" value="登录" />
+    <text name="用户登录" value="用户登录" />
+    <text name="LoginFailed" value="登录失败!" />
+    <text name="GetUsersKeywordsInputPrompt" value="姓名/登录名/邮箱/手机号 等..." />
+    <text name="Add" value="新增" />
+    <text name="AddRoot" value="新增顶级" />
+    <text name="AddSub" value="新增子级" />
+    <text name="Parent" value="上级" />
+    <text name="Edit" value="修改" />
+    <text name="Update" value="修改" />
+    <text name="Success" value="成功" />
+    <text name="Failed" value="失败" />
+    <text name="DeleteConfirm" value="确定删除已选定的项？" />
+    <text name="DeleteConfirmPropt" value="删除确认" />
+    <text name="Delete" value="删除" />
+    <text name="InternalServerError" value="服务器内部错误！" />
+    <text name="Unknown" value="未知" />
+    <text name="Woman" value="女" />
+    <text name="Man" value="男" />
+    <text name="Keywords" value="关键字" />
+    <text name="Search" value="搜索" />
+    <text name="AreYouSure" value="确定此操作吗？" />
+    <text name="Back" value="返回" />
+    <text name="Prompt" value="提示" />
+    <text name="LoadFailed" value="加载失败！请稍候重试。" />
+    <text name="OperationTip" value="操作提示" />
+    <text name="请选择要{0}的行" value="请选择要{0}的行" />
+    <text name="UnAuthorized" value="未授权" />
+    <text name="UnAuthenticated" value="身份验证失败！" />
+    <text name="UnAuthenticatedDetail" value="登陆已过期！稍重新登陆。" />
+    <text name="NameSurname" value="名 姓" />
+    <text name="用户名" value="用户名" />
+    <text name="记住我" value="记住用户名和密码" />
+    <text name="忘记密码？" value="忘记密码？" />
+    <text name="Name" value="名称" />
+    <text name="Surname" value="姓" />
+    <text name="EmailAddress" value="邮箱地址" />
+    <text name="Tenant" value="租户" />
+    <text name="CreateNewTenant" value="创建新租户" />
+    <text name="AdminEmailAddress" value="管理员邮箱地址" />
+    <text name="Save" value="保存" />
+    <text name="Cancel" value="取消" />
+    <text name="TenantName_Regex_Description" value="租户名至少2个字符,以字母开头后跟字母,数字,横线或下划线." />
+    <text name="DefaultPasswordIs" value="默认密码为 {0}" />
+    <text name="CanBeEmptyToLoginAsHost" value="留空以主租户登录." />
+    <text name="Register" value="注册" />
+    <text name="OrLoginWith" value="其他登录方式" />
+    <text name="WaitingForActivationMessage" value="你的帐户正在等待管理员激活." />
+    <text name="TenantSelection" value="租户选择" />
+    <text name="TenantSelection_Detail" value="请选择其中一个租户." />
+    <text name="Logout" value="注销" />
+    <text name="RegisterFormUserNameInvalidMessage">请不要在用户名中输入邮箱地址.</text>
+    <text name="DatabaseConnectionString" value="数据库连接串" />
+    <text name="User" value="用户" />
+    <text name="Role" value="角色" />
+    <text name="IsActive" value="是否激活" />
+    <text name="FullName" value="姓名" />
+    <text name="CreateNewUser" value="创建新用户" />
+    <text name="Remove" value="删除" />
+    <text name="Create" value="新增" />
+    <text name="Yes" value="是" />
+    <text name="No" value="否" />
+    <text name="Ok" value="确定" />
+    <text name="Optional" value="可选的" />
+    <text name="Administrator" value="后台管理" />
+    <text name="BaseInfo" value="基础信息" />
+    <text name="OrganizationUnit" value="组织单位" />
+    <text name="Company" value="单位部门" />
+    <text name="Department" value="部门" />
+    <text name="Job" value="岗位设置" />
+    <text name="Employee" value="员工档案" />
+    <text name="Administrative" value="行政区域" />
+    <text name="DataDictionary" value="数据字典" />
+    <text name="PatientInfo" value="患者档案" />
+    <text name="VascularAccess" value="血管通路" />
+    <text name="Purchase" value="采购入库" />
+    <text name="PurchaseBack" value="采购退货" />
+    <text name="ReturnGoods" value="采购退货" />
+    <text name="PutInStorage" value="入库" />
+    <text name="Inventory" value="库存查询" />
+    <text name="Receive" value="领用登记" />
+    <text name="Maintain" value="维修登记" />
+    <text name="Scral" value="报废登记" />
+    <text name="StorageInventory" value="库存查询" />
+    <text name="Report" value="统计报表" />
+    <text name="Config" value="业务设置" />
+    <text name="System" value="系统管理" />
+    <text name="Log" value="日志" />
+    <text name="Settings" value="设置" />
+    <text name="Btype" value="往来单位" />
+    <text name="Equipment info" value="设备档案" />
+    <text name="EquipmentInfo" value="设备档案" />
+    <text name="EquipmentSettings" value="业务设置" />
+    <text name="Patient" value="患者管理" />
+    <text name="PatientPatientInfo" value="患者档案" />
+    <text name="PatientVascularAccessInfo" value="血管通路" />
+    <text name="PatientVascularAccessInfoOutcomeConcurrenceRecord" value="转发并归记录" />
+    <text name="PatientVascularAccessInfoChangeRecord" value="变更记录" />
+    <text name="CheckManager" value="检查管理" />
+    <text name="CheckManagerCheckItem" value="检查项明细" />
+    <text name="CheckManagerPatientCheckRecord" value="检查结果" />
+    <text name="PatientTumorInformation" value="肿瘤信息" />
+    <text name="PatientDialysisResume" value="透析履历" />
+    <text name="PatientCourseSection" value="病程小节" />
+    <text name="PatientPhysicalExamination" value="体格检查记录" />
+    <text name="StoreManagement" value="库存管理" />
+    <text name="StoreManagementDrugsBrowse" value="药品一览" />
+    <text name="StoreManagementInventoryList" value="仓库档案" />
+    <text name="StoreManagementConsumablesInformation" value="耗材基本信息" />
+    <text name="DoctorAdvice" value="医嘱管理" />
+    <text name="DoctorAdviceDialysisSolution" value="透析方案" />
+    <text name="StoreManagementStorageEntry" value="入库" />
+    <text name="Brand" value="品牌" />
+  </texts>
+</localizationDictionary>

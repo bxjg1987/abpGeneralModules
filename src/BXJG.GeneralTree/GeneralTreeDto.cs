@@ -1,6 +1,7 @@
 ﻿using Abp.Application.Services.Dto;
 using Abp.AutoMapper;
 using Abp.Localization;
+using BXJG.Utils.Localization;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -13,13 +14,13 @@ namespace BXJG.GeneralTree
     /// <summary>
     /// 通用树形的管理页面使用的显示模型
     /// </summary>
-    [AutoMapFrom(typeof(GeneralTreeEntity))]
+    //[AutoMapFrom(typeof(GeneralTreeEntity))]
     public class GeneralTreeDto : GeneralTreeGetTreeNodeBaseDto<GeneralTreeDto>
     {
         public bool IsTree { get; set; }
-        public string IsTreeText => IsTree ?  "是".L() : "否".L();
+        public string IsTreeText => IsTree.ToString().UtilsL() ;
         public bool IsSysDefine { get; set; }
-        public string IsSysDefineText => IsSysDefine ? "是".L() : "否".L();
+        public string IsSysDefineText => IsSysDefine.ToString().UtilsL();
     }
 
     //[AutoMapFrom(typeof(DataDictionaryEntity))]

@@ -1,4 +1,4 @@
-﻿using Abp.Authorization;
+using Abp.Authorization;
 using Abp.Authorization.Users;
 using Abp.Dependency;
 using Abp.Domain.Uow;
@@ -6,6 +6,7 @@ using Abp.MultiTenancy;
 using Abp.Runtime.Security;
 using Abp.Runtime.Session;
 using BXJG.WeChat.MiniProgram;
+using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using System;
@@ -36,7 +37,7 @@ namespace ZLJ.Authentication.WeChatMiniProgram
 
         private HttpContext httpContext;
         private HttpResponse httpResponse;
-        string tenancyName=null;
+        string tenancyName = null;
         public WeChatMiniProgramLoginHandler(IAbpSession abpSession,
             LogInManager logInManager,
             ITenantCache tenantCache,
@@ -55,30 +56,47 @@ namespace ZLJ.Authentication.WeChatMiniProgram
         [UnitOfWork]
         public async Task<bool> ExcuteAsync(WeChatMiniProgramLoginContext ct)
         {
-            
             this.httpContext = ct.HttpContext;
             this.httpResponse = httpContext.Response;
             if (AbpSession.TenantId.HasValue)
                 this.tenancyName = _tenantCache.GetOrNull(AbpSession.TenantId.Value)?.TenancyName;
 
             //尝试做第三发登录（内部通过openid找到本地账号做登录），
-            var loginResult = await _logInManager.LoginAsync(new UserLoginInfo(MiniProgramConsts.AuthenticationScheme, ct.WeChatMiniProgramUser.openid, MiniProgramConsts.AuthenticationSchemeDisplayName), tenancyName);
+            var loginResult = await _logInManager.LoginAsync(new UserLoginInfo(MiniProgramConsts.AuthenticationScheme, ct.WeChatUser.openid, MiniProgramConsts.AuthenticationSchemeDisplayName), tenancyName);
             //根据登录结果，若成功则直接返回jwtToken 或者自动注册后返回
             switch (loginResult.Result)
             {
                 case AbpLoginResultType.Success:
                     {
-                        //var tttt = ct.WeChatMiniProgramUser.Input.EnumerateArray();
-                        ////更新微信用户信息
-                        //foreach (var item in tttt)
-                        //{
-                        //    await userManager.ReplaceClaimAsync(loginResult.User, new Claim(item., ""), item);
-                        //}
-
-                        //返回jwtToken
                         var accessToken = CreateAccessToken(CreateJwtClaims(loginResult.Identity));
 
-                      
+                        //User是聚合跟，因此查它的Claims性能差点，方式没毛病；即使这里不获取所有Claim，UserManager.ReplaceClaimAsync内部也会尝试查询全部，若我们查了，它就不会查了
+                        var claims = await userManager.GetClaimsAsync(loginResult.User);
+
+                        //ReplaceClaimAsync abp 5.4版本有bug，
+                        //var sessionKeyClaim = claims.Single(c => c.Type == "session_key");
+                        // var claimRT = await userManager.ReplaceClaimAsync(loginResult.User, sessionKeyClaim, new Claim("session_key", ct.WeChatUser.session_key));
+
+                        await userManager.RemoveClaimsAsync(loginResult.User, claims.Where(c => c.Type == "session_key"));
+                        await userManager.AddClaimAsync(loginResult.User, new Claim("session_key", ct.WeChatUser.session_key));
+
+                        #region 处理前端传递来的除code以外的其它数据
+                        //var tttt = ct.WeChatUser.Input.EnumerateArray();//json格式的数组对象才能这样
+                        //这样的方式才可以正常遍历前端传来的除code以外的其它数据
+                        //foreach (var property in ct.WeChatUser.Input.EnumerateObject())
+                        //{
+                        //    property.Name.Value..
+                        //}
+                        //或者用下面的方式按需更新
+                        //if (ct.WeChatUser.Input.TryGetProperty("nickName", out var k))
+                        //{
+                        //    var claim = claims.Single(c => c.Type == "nickName");
+                        //    await userManager.ReplaceClaimAsync(loginResult.User, claim, new Claim("", ""));
+                        //}
+                        #endregion
+
+                        //await UnitOfWorkManager.Current.SaveChangesAsync();//必须加
+
                         await WriteJsonAsync(new
                         {
                             AccessToken = accessToken,
@@ -93,7 +111,7 @@ namespace ZLJ.Authentication.WeChatMiniProgram
                         var newUser = await RegisterExternalUserAsync(new ExternalAuthUserInfo
                         {
                             Provider = MiniProgramConsts.AuthenticationScheme,
-                            ProviderKey = ct.WeChatMiniProgramUser.openid,
+                            ProviderKey = ct.WeChatUser.openid,
                             Name = Guid.NewGuid().ToString("N"),
                             EmailAddress = Guid.NewGuid().ToString("N") + "@mp.com",
                             Surname = "a"
@@ -107,7 +125,7 @@ namespace ZLJ.Authentication.WeChatMiniProgram
                         //}
 
                         // Try to login again with newly registered user!
-                        loginResult = await _logInManager.LoginAsync(new UserLoginInfo(MiniProgramConsts.AuthenticationScheme, ct.WeChatMiniProgramUser. openid, MiniProgramConsts.AuthenticationSchemeDisplayName), tenancyName);
+                        loginResult = await _logInManager.LoginAsync(new UserLoginInfo(MiniProgramConsts.AuthenticationScheme, ct.WeChatUser.openid, MiniProgramConsts.AuthenticationSchemeDisplayName), tenancyName);
                         if (loginResult.Result != AbpLoginResultType.Success)
                         {
                             //throw _abpLoginResultTypeHelper.CreateExceptionForFailedLoginAttempt(
@@ -123,12 +141,12 @@ namespace ZLJ.Authentication.WeChatMiniProgram
 
                         else
                         {
+                            await userManager.AddClaimAsync(loginResult.User, new Claim("session_key", ct.WeChatUser.session_key));
                             await WriteJsonAsync(new
                             {
                                 AccessToken = CreateAccessToken(CreateJwtClaims(loginResult.Identity)),
                                 ExpireInSeconds = (int)_configuration.Expiration.TotalSeconds
                             });
-
                         }
                         return true;
                     }

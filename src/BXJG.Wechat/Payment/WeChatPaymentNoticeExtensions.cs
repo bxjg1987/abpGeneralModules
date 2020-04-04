@@ -24,13 +24,13 @@ namespace BXJG.WeChat.Payment
         /// <param name="services"></param>
         /// <param name="act"></param>
         /// <returns></returns>
-        public static IServiceCollection AddWeChatPayment(this IServiceCollection services, Action<WeChatPaymentNoticeOptions> act)
+        public static IServiceCollection AddWeChatPayment(this IServiceCollection services, Action<WeChatPaymentOptions> act)
         {
             return services.Configure(act);
         }
         public static IServiceCollection AddWeChatPayment(this IServiceCollection services,IConfiguration configuration)
         {
-            return services.Configure<WeChatPaymentNoticeOptions>(configuration);
+            return services.Configure<WeChatPaymentOptions>(configuration);
         }
     }
 }

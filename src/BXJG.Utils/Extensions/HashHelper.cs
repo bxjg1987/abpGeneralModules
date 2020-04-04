@@ -37,5 +37,29 @@ namespace ZLJ.Utils.Extensions
                 return file.GetMD5();
             }
         }
+       /// <summary>
+       /// 计算指定字符串的32位md5值
+       /// 微信小程序支付签名算法使用的此方式，编码为utf8
+       /// 已转换为大写
+       /// </summary>
+       /// <param name="str"></param>
+       /// <param name="encoding"></param>
+       /// <returns></returns>
+        public static string GetMD532(this string str, Encoding encoding = null)
+        {
+            encoding = encoding ?? Encoding.UTF8;
+            var bs = encoding.GetBytes(str);
+            byte[] jmh;
+            using (var md5 = MD5.Create())
+            {
+                jmh = md5.ComputeHash(bs);
+            }
+            StringBuilder sb1 = new StringBuilder();
+            for (int i = 0; i < jmh.Length; i++)
+            {
+                sb1.Append(jmh[i].ToString("X2"));
+            }
+            return sb1.ToString();
+        }
     }
 }

@@ -74,8 +74,8 @@ namespace BXJG.WeChat.MiniProgram
             {
                 errcode = 0,
                 errmsg = "",
-                openid = "33333",
-                session_key = "222",
+                openid = "rexcfdwe",
+                session_key = "777777",
                 unionid = ""
             };
 

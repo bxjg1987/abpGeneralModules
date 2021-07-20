@@ -1,6 +1,6 @@
 # abpGeneralModules
 
-<h1>已迁移到码云：https://gitee.com/bxjg1987/abp</h1>
+<h1>已迁移到码云：https://gitee.com/bxjg1987_admin/abp</h1>
 
 微信小程序登录并与abp集成：https://www.bilibili.com/video/BV1Uk4y1d7Be/<br />
 微信小程序支付：https://www.bilibili.com/video/BV1Ac411h7Jo/

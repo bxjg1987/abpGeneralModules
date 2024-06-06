@@ -1,9 +1,46 @@
-<mxfile host="app.diagrams.net" modified="2024-06-06T12:09:44.707Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36 Edg/125.0.0.0" version="24.4.15" etag="iPGlNF5Cet0Bclw4F2Kk" type="github">
+<mxfile host="app.diagrams.net" modified="2024-06-06T12:44:16.455Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36 Edg/125.0.0.0" etag="OWEMOTzn7tSDdwpD8NGH" version="24.4.15" type="github">
   <diagram name="第 1 页" id="9dL3aeNZnrdGKL3NRtZ4">
-    <mxGraphModel>
+    <mxGraphModel dx="1426" dy="793" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="7Z5CiF9aDAxEN7ORND1Q-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="7Z5CiF9aDAxEN7ORND1Q-2" target="7Z5CiF9aDAxEN7ORND1Q-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7Z5CiF9aDAxEN7ORND1Q-2" value="blazor" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="170" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="7Z5CiF9aDAxEN7ORND1Q-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="7Z5CiF9aDAxEN7ORND1Q-3" target="7Z5CiF9aDAxEN7ORND1Q-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7Z5CiF9aDAxEN7ORND1Q-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="7Z5CiF9aDAxEN7ORND1Q-3" target="7Z5CiF9aDAxEN7ORND1Q-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7Z5CiF9aDAxEN7ORND1Q-3" value="组件" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="170" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="7Z5CiF9aDAxEN7ORND1Q-26" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="7Z5CiF9aDAxEN7ORND1Q-6" target="7Z5CiF9aDAxEN7ORND1Q-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7Z5CiF9aDAxEN7ORND1Q-28" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" source="7Z5CiF9aDAxEN7ORND1Q-6" target="7Z5CiF9aDAxEN7ORND1Q-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <object label="级联值" 说明="在外层组件设置值，递归传递到内层组件" id="7Z5CiF9aDAxEN7ORND1Q-6">
+          <mxCell style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+            <mxGeometry x="430" y="140" width="120" height="30" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="7Z5CiF9aDAxEN7ORND1Q-10" value="" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="430" y="200" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="7Z5CiF9aDAxEN7ORND1Q-23" value="从级联值组件提供" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="680" y="200" width="120" height="60" as="geometry" />
+        </mxCell>
+        <object label="从ioc提供" 说明="在外层组件设置值，递归传递到内层组件" id="7Z5CiF9aDAxEN7ORND1Q-27">
+          <mxCell style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+            <mxGeometry x="680" y="80" width="120" height="30" as="geometry" />
+          </mxCell>
+        </object>
       </root>
     </mxGraphModel>
   </diagram>

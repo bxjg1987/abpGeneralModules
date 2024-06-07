@@ -1,33 +1,54 @@
-<mxfile host="app.diagrams.net" modified="2024-06-06T13:13:14.944Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36 Edg/125.0.0.0" etag="HsaUaU-KDhQ2w9_aaP2M" version="24.4.15" type="github">
+<mxfile host="app.diagrams.net" modified="2024-06-07T03:43:40.746Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36 Edg/125.0.0.0" etag="S87yuTAmY5LqQSXNACoC" version="24.5.1" type="github">
   <diagram name="第 1 页" id="9dL3aeNZnrdGKL3NRtZ4">
     <mxGraphModel dx="1426" dy="793" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="Nx5NZt9RhkugBRBcL5FL-34" value="&lt;span style=&quot;font-weight: 400;&quot;&gt;组件&lt;/span&gt;" style="swimlane;whiteSpace=wrap;html=1;startSize=23;" vertex="1" parent="1">
-          <mxGeometry x="190" y="30" width="1010" height="530" as="geometry">
-            <mxRectangle x="190" y="30" width="60" height="30" as="alternateBounds" />
-          </mxGeometry>
-        </mxCell>
         <UserObject label="&lt;span style=&quot;font-weight: 400; text-align: left;&quot;&gt;级联值&lt;/span&gt;" link="https://learn.microsoft.com/zh-cn/aspnet/core/blazor/components/cascading-values-and-parameters?view=aspnetcore-8.0" linkTarget="_blank" id="Nx5NZt9RhkugBRBcL5FL-10">
-          <mxCell style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="Nx5NZt9RhkugBRBcL5FL-34">
-            <mxGeometry x="20" y="40" width="480" height="310" as="geometry">
-              <mxRectangle x="20" y="40" width="80" height="30" as="alternateBounds" />
+          <mxCell style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+            <mxGeometry x="710" y="600" width="230" height="120" as="geometry">
+              <mxRectangle x="710" y="610" width="80" height="30" as="alternateBounds" />
             </mxGeometry>
           </mxCell>
         </UserObject>
-        <mxCell id="Nx5NZt9RhkugBRBcL5FL-37" value="&lt;span style=&quot;text-align: left;&quot;&gt;匿名或命名值&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;text-align: left;&quot;&gt;不变的数据用IsFixed&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;text-align: left;&quot;&gt;从ioc提供 或者 通过级联值组件提供&lt;/span&gt;&lt;span style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;text-align: left;&quot;&gt;级联参数中的泛型参考&lt;/span&gt;&lt;span style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="Nx5NZt9RhkugBRBcL5FL-10">
-          <mxGeometry x="20" y="40" width="210" height="70" as="geometry" />
+        <mxCell id="Nx5NZt9RhkugBRBcL5FL-37" value="&lt;span style=&quot;text-align: left;&quot;&gt;匿名或命名值&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;text-align: left;&quot;&gt;不变的数据用IsFixed&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;text-align: left;&quot;&gt;从ioc提供 或者 通过级联值组件提供&lt;/span&gt;&lt;span style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;text-align: left;&quot;&gt;级联参数中的泛型参考&lt;/span&gt;&lt;span style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="Nx5NZt9RhkugBRBcL5FL-10" vertex="1">
+          <mxGeometry x="10" y="30" width="210" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="Nx5NZt9RhkugBRBcL5FL-35" value="事件" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="Nx5NZt9RhkugBRBcL5FL-34">
-          <mxGeometry x="760" y="40" width="200" height="200" as="geometry">
-            <mxRectangle x="20" y="240" width="60" height="30" as="alternateBounds" />
+        <mxCell id="LEiN4Oc-gCtD11Xc73Pk-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="LEiN4Oc-gCtD11Xc73Pk-2" target="LEiN4Oc-gCtD11Xc73Pk-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LEiN4Oc-gCtD11Xc73Pk-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="LEiN4Oc-gCtD11Xc73Pk-2" target="LEiN4Oc-gCtD11Xc73Pk-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LEiN4Oc-gCtD11Xc73Pk-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="LEiN4Oc-gCtD11Xc73Pk-2" target="LEiN4Oc-gCtD11Xc73Pk-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LEiN4Oc-gCtD11Xc73Pk-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="LEiN4Oc-gCtD11Xc73Pk-2" target="Nx5NZt9RhkugBRBcL5FL-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LEiN4Oc-gCtD11Xc73Pk-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="LEiN4Oc-gCtD11Xc73Pk-2" target="LEiN4Oc-gCtD11Xc73Pk-15">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="530" y="900" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="Nx5NZt9RhkugBRBcL5FL-36" value="表单" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="Nx5NZt9RhkugBRBcL5FL-34">
-          <mxGeometry x="520" y="40" width="200" height="200" as="geometry">
-            <mxRectangle x="20" y="240" width="60" height="30" as="alternateBounds" />
-          </mxGeometry>
+        <mxCell id="LEiN4Oc-gCtD11Xc73Pk-2" value="Blazor" style="rounded=0;whiteSpace=wrap;html=1;treeFolding=1;" vertex="1" parent="1">
+          <mxGeometry x="550" y="480" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="LEiN4Oc-gCtD11Xc73Pk-6" value="&lt;span style=&quot;font-weight: 700;&quot;&gt;表单&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;treeFolding=1;" vertex="1" parent="1">
+          <mxGeometry x="710" y="480" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="LEiN4Oc-gCtD11Xc73Pk-10" value="&lt;span style=&quot;font-weight: 700;&quot;&gt;事件&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;treeFolding=1;" vertex="1" parent="1">
+          <mxGeometry x="710" y="540" width="80" height="30" as="geometry" />
+        </mxCell>
+        <UserObject label="&lt;span style=&quot;font-weight: 400; text-align: left;&quot;&gt;安全&lt;/span&gt;" link="https://learn.microsoft.com/zh-cn/aspnet/core/blazor/components/cascading-values-and-parameters?view=aspnetcore-8.0" linkTarget="_blank" id="LEiN4Oc-gCtD11Xc73Pk-15">
+          <mxCell style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+            <mxGeometry x="710" y="800" width="300" height="190" as="geometry">
+              <mxRectangle x="590" y="860" width="80" height="30" as="alternateBounds" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <mxCell id="LEiN4Oc-gCtD11Xc73Pk-16" value="&lt;span style=&quot;text-align: left;&quot;&gt;匿名或命名值&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;text-align: left;&quot;&gt;不变的数据用IsFixed&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;text-align: left;&quot;&gt;从ioc提供 或者 通过级联值组件提供&lt;/span&gt;&lt;span style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;text-align: left;&quot;&gt;级联参数中的泛型参考&lt;/span&gt;&lt;span style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="LEiN4Oc-gCtD11Xc73Pk-15">
+          <mxGeometry x="30" y="50" width="210" height="110" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

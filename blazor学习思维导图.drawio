@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-06-07T08:36:35.638Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36 Edg/125.0.0.0" etag="JfbE0kjgndwDvVcxigDt" version="24.5.1" type="github">
+<mxfile host="app.diagrams.net" modified="2024-06-07T09:03:10.321Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36 Edg/125.0.0.0" etag="VJI7DJmd1jP_rVA2WZ92" version="24.5.1" type="github">
   <diagram name="第 1 页" id="9dL3aeNZnrdGKL3NRtZ4">
     <mxGraphModel dx="1426" dy="793" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -53,15 +53,28 @@
         <mxCell id="LEiN4Oc-gCtD11Xc73Pk-16" value="&lt;span style=&quot;text-align: left;&quot;&gt;匿名或命名值&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;text-align: left;&quot;&gt;不变的数据用IsFixed&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;text-align: left;&quot;&gt;从ioc提供 或者 通过级联值组件提供&lt;/span&gt;&lt;span style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;text-align: left;&quot;&gt;级联参数中的泛型参考&lt;/span&gt;&lt;span style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="LEiN4Oc-gCtD11Xc73Pk-15" vertex="1">
           <mxGeometry x="30" y="50" width="210" height="110" as="geometry" />
         </mxCell>
+        <mxCell id="9soH2Tnj0gDLSs4Zu7I_-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" source="9soH2Tnj0gDLSs4Zu7I_-3" target="9soH2Tnj0gDLSs4Zu7I_-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <UserObject label="&lt;span style=&quot;font-weight: 400; text-align: left;&quot;&gt;IOC&lt;/span&gt;" id="9soH2Tnj0gDLSs4Zu7I_-3">
-          <mxCell style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-            <mxGeometry x="710" y="70" width="520" height="390" as="geometry">
-              <mxRectangle x="710" y="70" width="80" height="30" as="alternateBounds" />
+          <mxCell style="swimlane;whiteSpace=wrap;html=1;" vertex="1" collapsed="1" parent="1">
+            <mxGeometry x="710" y="70" width="80" height="30" as="geometry">
+              <mxRectangle x="710" y="70" width="520" height="390" as="alternateBounds" />
             </mxGeometry>
           </mxCell>
         </UserObject>
         <mxCell id="9soH2Tnj0gDLSs4Zu7I_-4" value="&lt;div&gt;&lt;span style=&quot;&quot;&gt;没啥特别的&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;若某些服务是客户端服务端都需要的，则在客户端项目中定义扩展方法，两边都调用下。&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;日抛仅在客户端注册服务，客户端也会预呈现时报错，要么服务端注册下，要么禁用&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;scope客户端中等同于单例&lt;/div&gt;&lt;div&gt;tran的是每次从容器中获取服务都会new一个&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;在组件中需要服务是用@inject 或InjectAttribute&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Dispose服务问题&lt;/div&gt;&lt;div&gt;结论：单例的无所谓，没有实现IDispose的有点点问题，但不大，除了单例最好用都用&lt;span style=&quot;background-color: initial;&quot;&gt;OwningComponentBase&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;瞬态或范围服务在服务端基于长连接，所以生存期过程，对Dispose对象有影响，因为会长期持有&lt;/div&gt;&lt;div&gt;瞬时dispose服务在客户端也有问题，因为每次从容器中获取服务时都会是新的，又无法释放&lt;/div&gt;&lt;div&gt;所以dispose要尤其注意，请使用：&amp;nbsp;OwningComponentBase&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;文档中有检查应该使用使用&lt;span style=&quot;background-color: initial;&quot;&gt;OwningComponentBase的服务，这个还是有必要的，因为将来也可能搞出问题来&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;ef中这方面的说明请参考文档&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="9soH2Tnj0gDLSs4Zu7I_-3">
           <mxGeometry x="10" y="30" width="470" height="350" as="geometry" />
+        </mxCell>
+        <UserObject label="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial; font-weight: 400;&quot;&gt;ef问题&lt;/span&gt;&lt;/div&gt;" id="9soH2Tnj0gDLSs4Zu7I_-28">
+          <mxCell style="swimlane;whiteSpace=wrap;html=1;" vertex="1" collapsed="1" parent="1">
+            <mxGeometry x="1080" y="60" width="80" height="40" as="geometry">
+              <mxRectangle x="1280" y="70" width="170" height="80" as="alternateBounds" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <mxCell id="9soH2Tnj0gDLSs4Zu7I_-29" value="&lt;div&gt;没啥特别的，&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="9soH2Tnj0gDLSs4Zu7I_-28">
+          <mxGeometry x="10" y="30" width="150" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

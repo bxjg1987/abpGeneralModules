@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-06-24T06:45:25.930Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0" etag="pRGkMGxxtsxllFWYBKrB" version="24.6.0" type="github">
+<mxfile host="app.diagrams.net" modified="2024-06-24T06:48:26.847Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0" etag="L_mB3bRAYukYCtaoZ0po" version="24.6.0" type="github">
   <diagram name="第 1 页" id="wPvDmN9R8L-Oju3Ta7TA">
     <mxGraphModel dx="1426" dy="793" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -563,10 +563,10 @@
           <mxGeometry x="754.2123881252322" y="52.47980613893377" width="89.58620689655174" height="23.56" as="geometry" />
         </mxCell>
         <mxCell id="6Xh9w_Owfk05xHypsWYO-392" value="已上报" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="6Xh9w_Owfk05xHypsWYO-223">
-          <mxGeometry x="698" y="51.48000000000002" width="50" height="25" as="geometry" />
+          <mxGeometry x="694" y="51.48000000000002" width="50" height="25" as="geometry" />
         </mxCell>
         <mxCell id="6Xh9w_Owfk05xHypsWYO-393" value="待上报" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="6Xh9w_Owfk05xHypsWYO-223">
-          <mxGeometry x="644" y="51.48000000000002" width="50" height="25" as="geometry" />
+          <mxGeometry x="640" y="51.48000000000002" width="50" height="25" as="geometry" />
         </mxCell>
         <mxCell id="6Xh9w_Owfk05xHypsWYO-242" value="删除" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
           <mxGeometry x="511" y="253" width="32" height="20" as="geometry" />
@@ -805,10 +805,10 @@
           <mxGeometry x="1100" y="1238.5" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="6Xh9w_Owfk05xHypsWYO-314" value="修改" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1269" y="1243.5" width="50" height="20" as="geometry" />
+          <mxGeometry x="1269" y="1232.5" width="50" height="20" as="geometry" />
         </mxCell>
         <mxCell id="6Xh9w_Owfk05xHypsWYO-315" value="删除" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
-          <mxGeometry x="1323" y="1243.5" width="50" height="20" as="geometry" />
+          <mxGeometry x="1323" y="1232.5" width="50" height="20" as="geometry" />
         </mxCell>
         <mxCell id="6Xh9w_Owfk05xHypsWYO-326" value="" style="line;strokeWidth=1;html=1;perimeter=backbonePerimeter;points=[];outlineConnect=0;strokeColor=#B3B3B3;" vertex="1" parent="1">
           <mxGeometry x="696" y="1306" width="690" height="10" as="geometry" />
@@ -917,6 +917,12 @@
         </mxCell>
         <mxCell id="6Xh9w_Owfk05xHypsWYO-394" value="编制新增项目时，仅选项目，不添加明细。&lt;div&gt;返回列表页后，点击添加活动按钮来添加&lt;/div&gt;&lt;div style=&quot;&quot;&gt;这样，避免多层弹窗&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="1280" y="559.5" width="270" height="70.5" as="geometry" />
+        </mxCell>
+        <mxCell id="6Xh9w_Owfk05xHypsWYO-395" value="会议计划 | 采购计划 培训计划 | 其他计划" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1269" y="1265" width="108" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="6Xh9w_Owfk05xHypsWYO-396" value="状态和部门条件只能二选一" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1420" y="1030" width="270" height="70.5" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

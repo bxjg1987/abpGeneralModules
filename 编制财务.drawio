@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-06-24T07:09:51.516Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0" etag="lhUrjQDRxEq8GaF4vJhL" version="24.6.0" type="github">
+<mxfile host="app.diagrams.net" modified="2024-06-24T10:24:59.943Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0" etag="Jg5VBnG1bw61iTyVKdU-" version="24.6.0" type="github">
   <diagram name="第 1 页" id="wPvDmN9R8L-Oju3Ta7TA">
     <mxGraphModel dx="1426" dy="793" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -7,8 +7,8 @@
         <mxCell id="kLJGKbe1hVQjP4Zu41QE-1" value="编制任务" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="390" y="80" width="870" height="360" as="geometry" />
         </mxCell>
-        <mxCell id="kLJGKbe1hVQjP4Zu41QE-7" value="新增部门" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" parent="kLJGKbe1hVQjP4Zu41QE-1" vertex="1">
-          <mxGeometry x="180" y="39" width="80" height="30" as="geometry" />
+        <mxCell id="kLJGKbe1hVQjP4Zu41QE-7" value="新增" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" parent="kLJGKbe1hVQjP4Zu41QE-1" vertex="1">
+          <mxGeometry x="180" y="39" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="kLJGKbe1hVQjP4Zu41QE-28" value="" style="shape=table;startSize=0;container=1;collapsible=0;childLayout=tableLayout;fontSize=16;" parent="kLJGKbe1hVQjP4Zu41QE-1" vertex="1">
           <mxGeometry x="180" y="78" width="670" height="227" as="geometry" />
@@ -210,6 +210,12 @@
         <mxCell id="6Xh9w_Owfk05xHypsWYO-145" value="下达" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" vertex="1" parent="kLJGKbe1hVQjP4Zu41QE-1">
           <mxGeometry x="786" y="225.5" width="40" height="20" as="geometry" />
         </mxCell>
+        <mxCell id="6Xh9w_Owfk05xHypsWYO-399" value="删除" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fad9d5;strokeColor=#ae4132;" vertex="1" parent="kLJGKbe1hVQjP4Zu41QE-1">
+          <mxGeometry x="313" y="39" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6Xh9w_Owfk05xHypsWYO-401" value="下达" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="kLJGKbe1hVQjP4Zu41QE-1">
+          <mxGeometry x="246" y="39" width="60" height="30" as="geometry" />
+        </mxCell>
         <mxCell id="6Xh9w_Owfk05xHypsWYO-1" value="二级菜单" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="170" y="80" width="200" height="360" as="geometry" />
         </mxCell>
@@ -321,7 +327,7 @@
             <mxRectangle width="69" height="47" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="6Xh9w_Owfk05xHypsWYO-25" value="" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=#6c8ebf;overflow=hidden;fillColor=#dae8fc;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;" vertex="1" parent="6Xh9w_Owfk05xHypsWYO-23">
+        <mxCell id="6Xh9w_Owfk05xHypsWYO-25" value="xxxxxx" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=#6c8ebf;overflow=hidden;fillColor=#dae8fc;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;" vertex="1" parent="6Xh9w_Owfk05xHypsWYO-23">
           <mxGeometry x="69" width="161" height="47" as="geometry">
             <mxRectangle width="161" height="47" as="alternateBounds" />
           </mxGeometry>
@@ -868,7 +874,7 @@
           <mxGeometry x="1326" y="1386" width="50" height="20" as="geometry" />
         </mxCell>
         <mxCell id="6Xh9w_Owfk05xHypsWYO-248" value="新增项目" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="565" y="1190" width="61" height="19.5" as="geometry" />
+          <mxGeometry x="565" y="1190" width="55" height="19.5" as="geometry" />
         </mxCell>
         <mxCell id="6Xh9w_Owfk05xHypsWYO-363" value="部门名称" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="564" y="1120" width="117" height="17" as="geometry" />
@@ -879,8 +885,8 @@
         <mxCell id="6Xh9w_Owfk05xHypsWYO-367" value="2154 / 354435" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="565" y="1139" width="117" height="17" as="geometry" />
         </mxCell>
-        <mxCell id="6Xh9w_Owfk05xHypsWYO-368" value="退回" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffcccc;strokeColor=#36393d;" vertex="1" parent="1">
-          <mxGeometry x="631" y="1190" width="32" height="19.5" as="geometry" />
+        <mxCell id="6Xh9w_Owfk05xHypsWYO-368" value="退回" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="624" y="1190" width="32" height="19.5" as="geometry" />
         </mxCell>
         <mxCell id="6Xh9w_Owfk05xHypsWYO-369" value="年份" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="389" y="981" width="145.72" height="589" as="geometry" />
@@ -923,6 +929,9 @@
         </mxCell>
         <mxCell id="6Xh9w_Owfk05xHypsWYO-396" value="状态和部门条件只能二选一" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="1420" y="1030" width="270" height="70.5" as="geometry" />
+        </mxCell>
+        <mxCell id="6Xh9w_Owfk05xHypsWYO-398" value="删除" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="659.003986679353" y="1190" width="32" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

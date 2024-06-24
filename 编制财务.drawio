@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-06-24T06:31:22.116Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0" etag="SjBOrFa3Cm7RJ5IyTXQK" version="24.6.0" type="github">
+<mxfile host="app.diagrams.net" modified="2024-06-24T06:42:18.002Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0" etag="kdzwQ1t1a7fPxje2IF0v" version="24.6.0" type="github">
   <diagram name="第 1 页" id="wPvDmN9R8L-Oju3Ta7TA">
     <mxGraphModel dx="1426" dy="793" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -395,7 +395,7 @@
         <mxCell id="6Xh9w_Owfk05xHypsWYO-75" value="项目名称&lt;div&gt;金额“245134元&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="6Xh9w_Owfk05xHypsWYO-6">
           <mxGeometry x="97" y="133" width="130" height="37" as="geometry" />
         </mxCell>
-        <mxCell id="6Xh9w_Owfk05xHypsWYO-77" value="新增活动" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="6Xh9w_Owfk05xHypsWYO-6">
+        <mxCell id="6Xh9w_Owfk05xHypsWYO-77" value="添加活动" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="6Xh9w_Owfk05xHypsWYO-6">
           <mxGeometry x="127" y="201" width="60" height="20" as="geometry" />
         </mxCell>
         <mxCell id="6Xh9w_Owfk05xHypsWYO-78" value="未通过原因" style="text;html=1;align=right;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FF0000;" vertex="1" parent="6Xh9w_Owfk05xHypsWYO-6">
@@ -422,13 +422,13 @@
         <mxCell id="6Xh9w_Owfk05xHypsWYO-102" value="修改" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="6Xh9w_Owfk05xHypsWYO-6">
           <mxGeometry x="717" y="130.5" width="50" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="6Xh9w_Owfk05xHypsWYO-83" value="新增子活动" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="6Xh9w_Owfk05xHypsWYO-6">
+        <mxCell id="6Xh9w_Owfk05xHypsWYO-83" value="添加子活动" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="6Xh9w_Owfk05xHypsWYO-6">
           <mxGeometry x="268" y="191" width="77" height="20" as="geometry" />
         </mxCell>
         <mxCell id="6Xh9w_Owfk05xHypsWYO-316" value="修改" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="6Xh9w_Owfk05xHypsWYO-6">
           <mxGeometry x="348" y="191" width="39" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="6Xh9w_Owfk05xHypsWYO-90" value="新增子活动" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="6Xh9w_Owfk05xHypsWYO-6">
+        <mxCell id="6Xh9w_Owfk05xHypsWYO-90" value="添加子活动" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="6Xh9w_Owfk05xHypsWYO-6">
           <mxGeometry x="268" y="277" width="77" height="20" as="geometry" />
         </mxCell>
         <mxCell id="6Xh9w_Owfk05xHypsWYO-317" value="修改" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="6Xh9w_Owfk05xHypsWYO-6">
@@ -548,7 +548,7 @@
         </mxCell>
         <mxCell id="6Xh9w_Owfk05xHypsWYO-226" value="会议计划" style="strokeColor=inherit;fillColor=inherit;gradientColor=inherit;strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.containers.rrect;rSize=0;fontSize=17;fontColor=#666666;gradientColor=none;" vertex="1" parent="6Xh9w_Owfk05xHypsWYO-223">
           <mxGeometry width="100" height="25" relative="1" as="geometry">
-            <mxPoint x="187" y="1" as="offset" />
+            <mxPoint x="186" y="1" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="6Xh9w_Owfk05xHypsWYO-227" value="" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.containers.topButton;rSize=5;resizeWidth=1;movable=0;deletable=1;" vertex="1" parent="6Xh9w_Owfk05xHypsWYO-223">
@@ -561,6 +561,12 @@
         </mxCell>
         <mxCell id="6Xh9w_Owfk05xHypsWYO-360" value="部门下拉框" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="6Xh9w_Owfk05xHypsWYO-223">
           <mxGeometry x="754.2123881252322" y="52.47980613893377" width="89.58620689655174" height="23.56" as="geometry" />
+        </mxCell>
+        <mxCell id="6Xh9w_Owfk05xHypsWYO-392" value="已上报" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="6Xh9w_Owfk05xHypsWYO-223">
+          <mxGeometry x="698" y="51.48000000000002" width="50" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="6Xh9w_Owfk05xHypsWYO-393" value="待上报" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="6Xh9w_Owfk05xHypsWYO-223">
+          <mxGeometry x="644" y="51.48000000000002" width="50" height="25" as="geometry" />
         </mxCell>
         <mxCell id="6Xh9w_Owfk05xHypsWYO-242" value="删除" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
           <mxGeometry x="511" y="253" width="32" height="20" as="geometry" />
@@ -721,10 +727,10 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="6Xh9w_Owfk05xHypsWYO-283" value="项目名称 /&amp;nbsp; 34535" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="688" y="1120" width="130" height="17" as="geometry" />
+          <mxGeometry x="698" y="1120" width="130" height="17" as="geometry" />
         </mxCell>
         <mxCell id="6Xh9w_Owfk05xHypsWYO-284" value="新增活动" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="718" y="1170" width="60" height="20" as="geometry" />
+          <mxGeometry x="728" y="1170" width="60" height="20" as="geometry" />
         </mxCell>
         <mxCell id="6Xh9w_Owfk05xHypsWYO-289" value="" style="line;strokeWidth=1;html=1;" vertex="1" parent="1">
           <mxGeometry x="986" y="1137" width="402" height="10" as="geometry" />
@@ -733,7 +739,7 @@
           <mxGeometry x="1008" y="1113.5" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="6Xh9w_Owfk05xHypsWYO-291" value="343534" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="1095" y="1113.5" width="60" height="30" as="geometry" />
+          <mxGeometry x="1100" y="1113.5" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="6Xh9w_Owfk05xHypsWYO-292" value="修改" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1269" y="1118.5" width="50" height="20" as="geometry" />
@@ -745,7 +751,7 @@
           <mxGeometry x="873" y="1169" width="77" height="20" as="geometry" />
         </mxCell>
         <mxCell id="6Xh9w_Owfk05xHypsWYO-296" value="项目描述xxxxxxxxxx" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#666666;" vertex="1" parent="1">
-          <mxGeometry x="689" y="1140" width="130" height="17" as="geometry" />
+          <mxGeometry x="699" y="1140" width="130" height="17" as="geometry" />
         </mxCell>
         <mxCell id="6Xh9w_Owfk05xHypsWYO-297" value="活动描述xxxxxxxxxx" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#666666;" vertex="1" parent="1">
           <mxGeometry x="839" y="1141" width="130" height="17" as="geometry" />
@@ -772,7 +778,7 @@
           <mxGeometry x="1008" y="1140.5" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="6Xh9w_Owfk05xHypsWYO-305" value="343534" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="1095" y="1140.5" width="60" height="30" as="geometry" />
+          <mxGeometry x="1100" y="1140.5" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="6Xh9w_Owfk05xHypsWYO-306" value="修改" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1269" y="1148.5" width="50" height="20" as="geometry" />
@@ -784,7 +790,7 @@
           <mxGeometry x="1008" y="1174.5" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="6Xh9w_Owfk05xHypsWYO-309" value="343534" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="1095" y="1174.5" width="60" height="30" as="geometry" />
+          <mxGeometry x="1100" y="1174.5" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="6Xh9w_Owfk05xHypsWYO-310" value="修改" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1269" y="1179.5" width="50" height="20" as="geometry" />
@@ -796,7 +802,7 @@
           <mxGeometry x="1008" y="1238.5" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="6Xh9w_Owfk05xHypsWYO-313" value="343534" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="1095" y="1238.5" width="60" height="30" as="geometry" />
+          <mxGeometry x="1100" y="1238.5" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="6Xh9w_Owfk05xHypsWYO-314" value="修改" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1269" y="1243.5" width="50" height="20" as="geometry" />
@@ -805,16 +811,16 @@
           <mxGeometry x="1323" y="1243.5" width="50" height="20" as="geometry" />
         </mxCell>
         <mxCell id="6Xh9w_Owfk05xHypsWYO-326" value="" style="line;strokeWidth=1;html=1;perimeter=backbonePerimeter;points=[];outlineConnect=0;strokeColor=#B3B3B3;" vertex="1" parent="1">
-          <mxGeometry x="693" y="1306" width="690" height="10" as="geometry" />
+          <mxGeometry x="696" y="1306" width="690" height="10" as="geometry" />
         </mxCell>
         <mxCell id="6Xh9w_Owfk05xHypsWYO-327" value="项目名称 /&amp;nbsp; 34535" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="689" y="1326" width="130" height="17" as="geometry" />
+          <mxGeometry x="699" y="1326" width="130" height="17" as="geometry" />
         </mxCell>
         <mxCell id="6Xh9w_Owfk05xHypsWYO-328" value="新增活动" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="719" y="1376" width="60" height="20" as="geometry" />
+          <mxGeometry x="729" y="1376" width="60" height="20" as="geometry" />
         </mxCell>
         <mxCell id="6Xh9w_Owfk05xHypsWYO-329" value="项目描述xxxxxxxxxx" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#666666;" vertex="1" parent="1">
-          <mxGeometry x="690" y="1346" width="130" height="17" as="geometry" />
+          <mxGeometry x="700" y="1346" width="130" height="17" as="geometry" />
         </mxCell>
         <mxCell id="6Xh9w_Owfk05xHypsWYO-330" value="xxxxxx" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="1011" y="1322" width="60" height="30" as="geometry" />

@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-07-02T03:36:49.291Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0" etag="z_hO-bl4B6-e9cp808nT" version="24.6.3" type="github">
+<mxfile host="app.diagrams.net" modified="2024-07-02T03:39:49.985Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0" etag="UneGU2LpHb_Vdcxv2cu9" version="24.6.3" type="github">
   <diagram name="第 1 页" id="wPvDmN9R8L-Oju3Ta7TA">
-    <mxGraphModel dx="1426" dy="793" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1678" dy="933" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1048,6 +1048,17 @@
         </mxCell>
         <mxCell id="l2OPO0M1YV3bdUIdkwoi-38" value="财务汇总&lt;div&gt;仅查看&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1690" y="1840" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="l2OPO0M1YV3bdUIdkwoi-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.194;entryY=0.999;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="l2OPO0M1YV3bdUIdkwoi-27" target="l2OPO0M1YV3bdUIdkwoi-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1583" y="2080" />
+              <mxPoint x="377" y="2080" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="l2OPO0M1YV3bdUIdkwoi-40" value="正向提交是整体，多个子活动批量回退和提交" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="855" y="2066" width="425" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

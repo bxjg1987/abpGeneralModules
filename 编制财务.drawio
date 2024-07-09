@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-07-08T03:09:06.196Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0" etag="EMGekKwo_tooGXwWatfx" version="24.6.4" type="github">
+<mxfile host="app.diagrams.net" modified="2024-07-09T03:45:18.742Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0" etag="j05YN1gLu8LOlgKJmbLA" version="24.6.4" type="github">
   <diagram name="第 1 页" id="wPvDmN9R8L-Oju3Ta7TA">
-    <mxGraphModel dx="1426" dy="793" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1666" dy="793" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1343,10 +1343,10 @@
             <mxPoint x="1" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="ir-nT9oGhd7z0S_BH7DS-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;strokeColor=#FF0000;" edge="1" parent="1" source="l2OPO0M1YV3bdUIdkwoi-109" target="l2OPO0M1YV3bdUIdkwoi-66">
+        <mxCell id="ir-nT9oGhd7z0S_BH7DS-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;strokeColor=#FF0000;" parent="1" source="l2OPO0M1YV3bdUIdkwoi-109" target="l2OPO0M1YV3bdUIdkwoi-66" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="ir-nT9oGhd7z0S_BH7DS-2" value="退回其它部门的数据" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#FF0000;" vertex="1" connectable="0" parent="ir-nT9oGhd7z0S_BH7DS-1">
+        <mxCell id="ir-nT9oGhd7z0S_BH7DS-2" value="退回其它部门的数据" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#FF0000;" parent="ir-nT9oGhd7z0S_BH7DS-1" vertex="1" connectable="0">
           <mxGeometry x="-0.0335" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
@@ -1393,6 +1393,12 @@
         </mxCell>
         <mxCell id="l2OPO0M1YV3bdUIdkwoi-151" value="财务汇总&lt;div&gt;仅查看&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1354.9999999999998" y="2580" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="flqJAlchO_emDevL7ED4-1" value="不要等，因为后面要加部门" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1002" y="2755" width="104" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="flqJAlchO_emDevL7ED4-2" value="不要等，因为后面要加部门" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1236" y="2410" width="104" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

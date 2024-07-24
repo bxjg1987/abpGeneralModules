@@ -1395,7 +1395,7 @@
           <mxGeometry x="1405.4999999999998" y="2922" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="flqJAlchO_emDevL7ED4-2" value="不要等多个部门汇总，因为后面要加部门，但单个部门可以等" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="1010.5" y="2702" width="200" height="85" as="geometry" />
+          <mxGeometry x="1010.5" y="2730" width="200" height="57" as="geometry" />
         </mxCell>
         <mxCell id="5Ljw5hiyWaMlv-GOu8Zq-1" value="有权限的审核" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="536" y="2822" width="108" height="30" as="geometry" />
